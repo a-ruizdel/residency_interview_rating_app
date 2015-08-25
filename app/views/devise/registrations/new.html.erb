@@ -21,6 +21,13 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+<!-- Label and input for admin -->
+      <div class="checkbox">
+        <label for="admin">
+          <input type="checkbox" id="admin" name="admin" value="1" <%= "checked" if @user.admin %>>
+          Administrator?
+        </label>
+      </div>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
