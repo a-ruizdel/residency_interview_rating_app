@@ -27,7 +27,7 @@
       <% @candidates.each do |candidate| %>
       <tr>
         <td><%= candidate.candidate_id %></td>
-        <td><%= candidate.photo %></td>
+        <td><img src="<%= candidate.photo %>" class="img-thumbnail"</td>
         <td><%= candidate.candidate_firstname %></td>
         <td><%= candidate.candidate_lastname %></td>
         <td><%= candidate.block %></td>
