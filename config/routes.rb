@@ -31,6 +31,8 @@ Rails.application.routes.draw do
 
   # DELETE
   get "/delete_candidate/:id", :controller => "candidates", :action => "destroy"
+
+  get "/welcome/sixteenam", :controller => "welcome", :action => "sixteenam"
   #------------------------------
 
   devise_for :users
