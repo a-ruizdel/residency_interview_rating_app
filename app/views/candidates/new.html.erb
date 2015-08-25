@@ -18,84 +18,22 @@
       <!-- Hidden input for authenticity token to protect from forgery -->
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
-      <!-- Label and input for aoa -->
-      <div class="checkbox">
-        <label for="aoa">
-          <input type="checkbox" id="aoa" name="aoa" value="1" <%= "checked" if @candidate.aoa %>>
-          Aoa
-        </label>
-      </div>
-
-      <!-- Label and input for candidate_lastname -->
-      <div class="form-group">
-        <label for="candidate_lastname" class="control-label">
-          Candidate lastname
-        </label>
-
-        <input type="text" id="candidate_lastname" name="candidate_lastname" placeholder="Candidate lastname" class="form-control" value="<%= @candidate.candidate_lastname %>">
-      </div>
-
-      <!-- Label and input for block -->
-      <div class="form-group">
-        <label for="block" class="control-label">
-          Block
-        </label>
-
-        <input type="text" id="block" name="block" placeholder="Block" class="form-control" value="<%= @candidate.block %>">
-      </div>
-
-      <!-- Label and input for interview_on -->
-      <div class="form-group">
-        <label for="interview_on" class="control-label">
-          Interview on
-        </label>
-
-        <input type="text" id="interview_on" name="interview_on" placeholder="Interview on" class="form-control" value="<%= @candidate.interview_on %>">
-      </div>
-
-      <!-- Label and input for candidate_id -->
-      <div class="form-group">
-        <label for="candidate_id" class="control-label">
-          Candidate
-        </label>
-
-        <input type="text" id="candidate_id" name="candidate_id" placeholder="Candidate" class="form-control" value="<%= @candidate.candidate_id %>">
-      </div>
-
       <!-- Label and input for candidate_firstname -->
       <div class="form-group">
         <label for="candidate_firstname" class="control-label">
-          Candidate firstname
+          Candidate's First Name
         </label>
 
         <input type="text" id="candidate_firstname" name="candidate_firstname" placeholder="Candidate firstname" class="form-control" value="<%= @candidate.candidate_firstname %>">
       </div>
 
-      <!-- Label and input for add_degree -->
+      <!-- Label and input for candidate_lastname -->
       <div class="form-group">
-        <label for="add_degree" class="control-label">
-          Add degree
+        <label for="candidate_lastname" class="control-label">
+          Candidate's Last Name
         </label>
 
-        <input type="text" id="add_degree" name="add_degree" placeholder="Add degree" class="form-control" value="<%= @candidate.add_degree %>">
-      </div>
-
-      <!-- Label and input for usmle_2 -->
-      <div class="form-group">
-        <label for="usmle_2" class="control-label">
-          Usmle 2
-        </label>
-
-        <input type="text" id="usmle_2" name="usmle_2" placeholder="Usmle 2" class="form-control" value="<%= @candidate.usmle_2 %>">
-      </div>
-
-      <!-- Label and input for usmle_1 -->
-      <div class="form-group">
-        <label for="usmle_1" class="control-label">
-          Usmle 1
-        </label>
-
-        <input type="text" id="usmle_1" name="usmle_1" placeholder="Usmle 1" class="form-control" value="<%= @candidate.usmle_1 %>">
+        <input type="text" id="candidate_lastname" name="candidate_lastname" placeholder="Candidate lastname" class="form-control" value="<%= @candidate.candidate_lastname %>">
       </div>
 
       <!-- Label and input for hometown -->
@@ -116,10 +54,75 @@
         <input type="text" id="school" name="school" placeholder="School" class="form-control" value="<%= @candidate.school %>">
       </div>
 
+      <!-- Label and input for candidate_id -->
+      <div class="form-group">
+        <label for="candidate_id" class="control-label">
+          Candidate
+        </label>
+
+        <input type="text" id="candidate_id" name="candidate_id" placeholder="Candidate" class="form-control" value="<%= @candidate.candidate_id %>">
+      </div>
+
+
+      <!-- Label and input for add_degree -->
+      <div class="form-group">
+        <label for="add_degree" class="control-label">
+          Additional degree(s)
+        </label>
+
+        <input type="text" id="add_degree" name="add_degree" placeholder="Add degree" class="form-control" value="<%= @candidate.add_degree %>">
+      </div>
+
+      <!-- Label and input for usmle_1 -->
+      <div class="form-group">
+        <label for="usmle_1" class="control-label">
+          Usmle 1
+        </label>
+
+        <input type="text" id="usmle_1" name="usmle_1" placeholder="Usmle 1" class="form-control" value="<%= @candidate.usmle_1 %>">
+      </div>
+
+
+      <!-- Label and input for usmle_2 -->
+      <div class="form-group">
+        <label for="usmle_2" class="control-label">
+          Usmle 2
+        </label>
+
+        <input type="text" id="usmle_2" name="usmle_2" placeholder="Usmle 2" class="form-control" value="<%= @candidate.usmle_2 %>">
+      </div>
+
+      <!-- Label and input for aoa -->
+      <div class="checkbox">
+        <label for="aoa">
+          <input type="checkbox" id="aoa" name="aoa" value="1" <%= "checked" if @candidate.aoa %>>
+          Aoa
+        </label>
+      </div>
+
+      <!-- Label and input for block -->
+      <div class="form-group">
+        <label for="block" class="control-label">
+          AM or PM Block
+        </label>
+
+        <input type="text" id="block" name="block" placeholder="Block" class="form-control" value="<%= @candidate.block %>">
+      </div>
+
+      <!-- Label and input for interview_on -->
+      <div class="form-group">
+        <label for="interview_on" class="control-label">
+          Interview on which date?
+        </label>
+
+        <input type="text" id="interview_on" name="interview_on" placeholder="Interview on" class="form-control" value="<%= @candidate.interview_on %>">
+      </div>
+
+
       <!-- Label and input for photo -->
       <div class="form-group">
         <label for="photo" class="control-label">
-          Photo
+          Upload Photo
         </label>
 
         <input type="text" id="photo" name="photo" placeholder="Photo" class="form-control" value="<%= @candidate.photo %>">
