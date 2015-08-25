@@ -1,4 +1,39 @@
 Rails.application.routes.draw do
+  # Routes for the Rating resource:
+  # CREATE
+  get "/ratings/new", :controller => "ratings", :action => "new"
+  post "/create_rating", :controller => "ratings", :action => "create"
+
+  # READ
+  get "/ratings", :controller => "ratings", :action => "index"
+  get "/ratings/:id", :controller => "ratings", :action => "show"
+
+  # UPDATE
+  get "/ratings/:id/edit", :controller => "ratings", :action => "edit"
+  post "/update_rating/:id", :controller => "ratings", :action => "update"
+
+  # DELETE
+  get "/delete_rating/:id", :controller => "ratings", :action => "destroy"
+  #------------------------------
+
+  # Routes for the Candidate resource:
+  # CREATE
+  get "/candidates/new", :controller => "candidates", :action => "new"
+  post "/create_candidate", :controller => "candidates", :action => "create"
+
+  # READ
+  get "/candidates", :controller => "candidates", :action => "index"
+  get "/candidates/:id", :controller => "candidates", :action => "show"
+
+  # UPDATE
+  get "/candidates/:id/edit", :controller => "candidates", :action => "edit"
+  post "/update_candidate/:id", :controller => "candidates", :action => "update"
+
+  # DELETE
+  get "/delete_candidate/:id", :controller => "candidates", :action => "destroy"
+  #------------------------------
+
+  devise_for :users
   #get 'welcome/index'
   root 'welcome#index'
 

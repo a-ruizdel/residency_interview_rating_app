@@ -1,0 +1,43 @@
+<div class="page-header">
+  <h3>Rating #<%= @rating.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Candidate</dt>
+      <dd><%= @rating.candidate_id %></dd>
+
+      <dt>Overall comment</dt>
+      <dd><%= @rating.overall_comment %></dd>
+
+      <dt>Q4</dt>
+      <dd><%= @rating.q4 %></dd>
+
+      <dt>Q3</dt>
+      <dd><%= @rating.q3 %></dd>
+
+      <dt>Q2</dt>
+      <dd><%= @rating.q2 %></dd>
+
+      <dt>Q1</dt>
+      <dd><%= @rating.q1 %></dd>
+
+      <dt>User</dt>
+      <dd><%= @rating.user_id %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/ratings" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/ratings/<%= @rating.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_rating/<%= @rating.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>

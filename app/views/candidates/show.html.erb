@@ -1,0 +1,58 @@
+<div class="page-header">
+  <h3>Candidate #<%= @candidate.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Aoa</dt>
+      <dd><%= @candidate.aoa %></dd>
+
+      <dt>Candidate lastname</dt>
+      <dd><%= @candidate.candidate_lastname %></dd>
+
+      <dt>Block</dt>
+      <dd><%= @candidate.block %></dd>
+
+      <dt>Interview on</dt>
+      <dd><%= @candidate.interview_on %></dd>
+
+      <dt>Candidate</dt>
+      <dd><%= @candidate.candidate_id %></dd>
+
+      <dt>Candidate firstname</dt>
+      <dd><%= @candidate.candidate_firstname %></dd>
+
+      <dt>Add degree</dt>
+      <dd><%= @candidate.add_degree %></dd>
+
+      <dt>Usmle 2</dt>
+      <dd><%= @candidate.usmle_2 %></dd>
+
+      <dt>Usmle 1</dt>
+      <dd><%= @candidate.usmle_1 %></dd>
+
+      <dt>Hometown</dt>
+      <dd><%= @candidate.hometown %></dd>
+
+      <dt>School</dt>
+      <dd><%= @candidate.school %></dd>
+
+      <dt>Photo</dt>
+      <dd><%= @candidate.photo %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/candidates" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/candidates/<%= @candidate.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_candidate/<%= @candidate.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
