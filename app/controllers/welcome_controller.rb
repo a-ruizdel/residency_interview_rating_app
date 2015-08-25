@@ -3,8 +3,6 @@ class WelcomeController < ApplicationController
   end
 
   def sixteenam
-    @dec16am = Candidate.where("interview_on = 15-12-16 AND block = AM")
-
-
+    @dec16am = Candidate.where("block=AM")
   end
 end

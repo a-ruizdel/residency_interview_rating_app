@@ -1,8 +1,23 @@
 <h1>hello</h1>
 
 <dt>12-16 AM  Candidates</dt>
-<%= @dec16am %>
+<%#= @dec16am.candidate_firstname %>
 
+<%# @dec16am.each do |candidate| %>
+      <tr>
+        <td><%#= candidate.candidate_id %></td>
+        <td><img src="<%#= candidate.photo %>" class="img-thumbnail"</td>
+        <td><%#= candidate.candidate_firstname %></td>
+        <td><%#= candidate.candidate_lastname %></td>
+        <td><%#= candidate.block %></td>
+        <td><%#= candidate.interview_on %></td>
+        <td><%#= candidate.hometown %></td>
+        <td><%#= candidate.school %></td>
+        <td><%#= candidate.add_degree %></td>
+        <td><%#= candidate.usmle_1 %></td>
+        <td><%#= candidate.usmle_2 %></td>
+        <td><%#= candidate.aoa %></td>
+<%# end %>
 <!-- <dt>Venues</dt>
         <%# @dec16am.each do |names| %>
         <dd><li class="list-group-item">
