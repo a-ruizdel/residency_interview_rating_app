@@ -26,18 +26,18 @@
 
       <% @candidates.each do |candidate| %>
       <tr>
-        <td><%= candidate.aoa %></td>
+        <td><%= candidate.candidate_id %></td>
+        <td><%= candidate.photo %></td>
+        <td><%= candidate.candidate_firstname %></td>
         <td><%= candidate.candidate_lastname %></td>
         <td><%= candidate.block %></td>
         <td><%= candidate.interview_on %></td>
-        <td><%= candidate.candidate_id %></td>
-        <td><%= candidate.candidate_firstname %></td>
-        <td><%= candidate.add_degree %></td>
-        <td><%= candidate.usmle_2 %></td>
-        <td><%= candidate.usmle_1 %></td>
         <td><%= candidate.hometown %></td>
         <td><%= candidate.school %></td>
-        <td><%= candidate.photo %></td>
+        <td><%= candidate.add_degree %></td>
+        <td><%= candidate.usmle_1 %></td>
+        <td><%= candidate.usmle_2 %></td>
+        <td><%= candidate.aoa %></td>
         <td>
           <a href="/candidates/<%= candidate.id %>" class="btn btn-primary">Show</a>
           <a href="/candidates/<%= candidate.id %>/edit" class="btn btn-warning">Edit</a>
