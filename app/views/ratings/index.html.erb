@@ -9,12 +9,12 @@
   <div class="col-md-12">
     <table class="table table-striped table-hover">
       <tr>
-        <th>Candidate</th>
-        <th>Overall comment</th>
-        <th>Q4</th>
-        <th>Q3</th>
-        <th>Q2</th>
+        <th>Candidate's Name</th>
         <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+         <th>Overall comment</th>
         <th>User</th>
         <th>Actions</th>
       </tr>
@@ -22,11 +22,15 @@
       <% @ratings.each do |rating| %>
       <tr>
         <td><%= rating.candidate_id %></td>
-        <td><%= rating.overall_comment %></td>
-        <td><%= rating.q4 %></td>
-        <td><%= rating.q3 %></td>
-        <td><%= rating.q2 %></td>
         <td><%= rating.q1 %></td>
+        <td><%= rating.q2 %></td>
+        <td><%= rating.q3 %></td>
+        <td><%= rating.q4 %></td>
+        <td><%= rating.overall_comment %></td>
+
+
+
+
         <td><%= rating.user_id %></td>
         <td>
           <a href="/ratings/<%= rating.id %>" class="btn btn-primary">Show</a>

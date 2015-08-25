@@ -21,55 +21,62 @@
       <!-- Label and input for candidate_id -->
       <div class="form-group">
         <label for="candidate_id" class="control-label">
-          Candidate
+          Candidate's Name
         </label>
 
         <input type="text" id="candidate_id" name="candidate_id" placeholder="Candidate" class="form-control" value="<%= @rating.candidate_id %>">
       </div>
 
-      <!-- Label and input for overall_comment -->
+
+      <!-- Label and input for q1 -->
+      <div class="form-group">
+        <label for="q1" class="control-label">
+          Rate this candidate's potential to be a great resident (1 to 5)
+        </label>
+
+        <input type="text" id="q1" name="q1" placeholder="Q1" class="form-control" value="<%= @rating.q1 %>">
+      </div>
+
+           <!-- Label and input for q2 -->
+      <div class="form-group">
+        <label for="q2" class="control-label">
+          Rate this candidate's strength of application (1 to 5)
+        </label>
+
+        <input type="text" id="q2" name="q2" placeholder="Q2" class="form-control" value="<%= @rating.q2 %>">
+      </div>
+
+            <!-- Label and input for q3 -->
+      <div class="form-group">
+        <label for="q3" class="control-label">
+          Rate this candidate's professionalism (1 to 5)
+
+        </label>
+
+        <input type="text" id="q3" name="q3" placeholder="Q3" class="form-control" value="<%= @rating.q3 %>">
+      </div>
+
+
+      <!-- Label and input for q4 -->
+      <div class="form-group">
+        <label for="q4" class="control-label">
+          Suppose one of your fellow medical students is causing friction amongst the group on a clerkship (bad-mouthing others, complaining about duties, comparing hours spent on various tasks).  How would you address this situation? (PBI-1)
+        </label>
+
+        <input type="text" id="q4" name="q4" placeholder="Q4" class="form-control" value="<%= @rating.q4 %>">
+      </div>
+
+
+
+
+
+<!-- Label and input for overall_comment -->
       <div class="form-group">
         <label for="overall_comment" class="control-label">
           Overall comment
         </label>
 
         <input type="text" id="overall_comment" name="overall_comment" placeholder="Overall comment" class="form-control" value="<%= @rating.overall_comment %>">
-      </div>
-
-      <!-- Label and input for q4 -->
-      <div class="form-group">
-        <label for="q4" class="control-label">
-          Q4
-        </label>
-
-        <input type="text" id="q4" name="q4" placeholder="Q4" class="form-control" value="<%= @rating.q4 %>">
-      </div>
-
-      <!-- Label and input for q3 -->
-      <div class="form-group">
-        <label for="q3" class="control-label">
-          Q3
-        </label>
-
-        <input type="text" id="q3" name="q3" placeholder="Q3" class="form-control" value="<%= @rating.q3 %>">
-      </div>
-
-      <!-- Label and input for q2 -->
-      <div class="form-group">
-        <label for="q2" class="control-label">
-          Q2
-        </label>
-
-        <input type="text" id="q2" name="q2" placeholder="Q2" class="form-control" value="<%= @rating.q2 %>">
-      </div>
-
-      <!-- Label and input for q1 -->
-      <div class="form-group">
-        <label for="q1" class="control-label">
-          Q1
-        </label>
-
-        <input type="text" id="q1" name="q1" placeholder="Q1" class="form-control" value="<%= @rating.q1 %>">
       </div>
 
       <!-- Label and input for user_id -->
