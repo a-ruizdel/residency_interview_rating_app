@@ -14,7 +14,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <form action="/create_candidate" method="post">
+    <form enctype="multipart/form-data" action="/create_candidate" method="post">
       <!-- Hidden input for authenticity token to protect from forgery -->
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
@@ -120,12 +120,14 @@
 
 
       <!-- Label and input for photo -->
+
+
       <div class="form-group">
         <label for="photo" class="control-label">
           Upload Photo
         </label>
-
-        <input type="text" id="photo" name="photo" placeholder="Photo" class="form-control" value="<%= @candidate.photo %>">
+        <input id ="photo" name="photo" type="file" class="form-control">
+        <input id="photo" input type="text" id="photo" name="photo" placeholder="Photo" #class="form-control" value="<%= @candidate.photo %>">
       </div>
 
       <button class="btn btn-success">
