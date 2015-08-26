@@ -5,6 +5,7 @@ class RatingsController < ApplicationController
 
   def show
     @rating = Rating.find(params[:id])
+    @candidate = Candidate.new
   end
 
   def new
