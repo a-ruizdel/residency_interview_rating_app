@@ -21,7 +21,7 @@
 
       <% @ratings.each do |rating| %>
       <tr>
-        <td><%= rating.candidate_id %></td>
+        <td><%= rating.candidate.candidate_lastname %></td>
         <td><%= rating.q1 %></td>
         <td><%= rating.q2 %></td>
         <td><%= rating.q3 %></td>
