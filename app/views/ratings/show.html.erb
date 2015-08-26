@@ -4,29 +4,56 @@
 
 <div class="row">
   <div class="col-md-12">
-    <dl class="dl-horizontal">
+
+  <div class="container">
+  <div class="row">
+
+    <div class="col-xs-4">
+      <p>Candidate Name: <%= @rating.candidate.candidate_lastname %></p>
+
+      <p>Hometown: <%= @rating.candidate.hometown %></p>
+
+      <p>School: <%= @rating.candidate.school %></p>
+
+      <p>Additional degree: <%= @rating.candidate.add_degree %></p>
+
+      <p>Usmle 1: <%= @rating.candidate.usmle_1 %></p>
+
+      <p>Usmle 2: <%= @rating.candidate.usmle_2 %></p>
+
+      <p>Aoa: <%= @rating.candidate.aoa %></p>
+    </div>
+
+    <div class="col-xs-2">
+      <p>Photo</p>
+      <p><img src="<%= @rating.candidate.photo %>" class="img-responsive"</p>
+    </div>
+
+
+    <div class="col-xs-6">
+      <p>Q1: <%= @rating.q1 %></p>
+
+      <p>Q2: <%= @rating.q2 %></p>
+
+      <p>Q3: <%= @rating.q3 %></p>
+
+      <p>Q4: <%= @rating.q4 %></p>
+
+      <p>Overall comment: <%= @rating.overall_comment %></p>
+
+      <p>User: <%= @rating.user_id %></p>
+
+    </div>
+
+  </div>
+</div>
+
+ <!--    <dl class="dl-horizontal">
       <dt>Candidate</dt>
-      <dd><%= @rating.candidate.candidate_lastname %></dd>
+      <dd><%#= @rating.candidate.candidate_lastname %></dd>
 
-      <dt>Overall comment</dt>
-      <dd><%= @rating.overall_comment %></dd>
-
-      <dt>Q4</dt>
-      <dd><%= @rating.q4 %></dd>
-
-      <dt>Q3</dt>
-      <dd><%= @rating.q3 %></dd>
-
-      <dt>Q2</dt>
-      <dd><%= @rating.q2 %></dd>
-
-      <dt>Q1</dt>
-      <dd><%= @rating.q1 %></dd>
-
-      <dt>User</dt>
-      <dd><%= @rating.user_id %></dd>
-
-    </dl>
+ <!--      <dt>Photo</dt>
+      <dd><img src="<%#= @rating.candidate.photo %>" class="img-responsive"</dd> -->
 
     <div class="btn-group btn-group-justified">
       <a href="/ratings" class="btn btn-primary">
