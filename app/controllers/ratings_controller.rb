@@ -1,8 +1,6 @@
 class RatingsController < ApplicationController
   def index
-    @ratings = Rating.all
-
-
+    @ratings = current_user.ratings
   end
 
   def show

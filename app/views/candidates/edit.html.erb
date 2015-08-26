@@ -53,6 +53,25 @@
         <input type="text" id="interview_on" name="interview_on" placeholder="Interview on" class="form-control" value="<%= @candidate.interview_on %>">
       </div>
 
+      <!-- Label and input for hometown -->
+      <div class="form-group">
+        <label for="hometown" class="control-label">
+          Hometown
+        </label>
+
+        <input type="text" id="hometown" name="hometown" placeholder="Hometown" class="form-control" value="<%= @candidate.hometown %>">
+      </div>
+
+      <!-- Label and input for school -->
+      <div class="form-group">
+        <label for="school" class="control-label">
+          School
+        </label>
+
+        <input type="text" id="school" name="school" placeholder="School" class="form-control" value="<%= @candidate.school %>">
+      </div>
+
+
       <!-- Label and input for candidate_id -->
       <!-- <div class="form-group">
         <label for="candidate_id" class="control-label">
@@ -80,15 +99,6 @@
         <input type="text" id="add_degree" name="add_degree" placeholder="Add degree" class="form-control" value="<%= @candidate.add_degree %>">
       </div>
 
-      <!-- Label and input for usmle_2 -->
-      <div class="form-group">
-        <label for="usmle_2" class="control-label">
-          Usmle 2
-        </label>
-
-        <input type="text" id="usmle_2" name="usmle_2" placeholder="Usmle 2" class="form-control" value="<%= @candidate.usmle_2 %>">
-      </div>
-
       <!-- Label and input for usmle_1 -->
       <div class="form-group">
         <label for="usmle_1" class="control-label">
@@ -98,22 +108,14 @@
         <input type="text" id="usmle_1" name="usmle_1" placeholder="Usmle 1" class="form-control" value="<%= @candidate.usmle_1 %>">
       </div>
 
-      <!-- Label and input for hometown -->
+
+      <!-- Label and input for usmle_2 -->
       <div class="form-group">
-        <label for="hometown" class="control-label">
-          Hometown
+        <label for="usmle_2" class="control-label">
+          Usmle 2
         </label>
 
-        <input type="text" id="hometown" name="hometown" placeholder="Hometown" class="form-control" value="<%= @candidate.hometown %>">
-      </div>
-
-      <!-- Label and input for school -->
-      <div class="form-group">
-        <label for="school" class="control-label">
-          School
-        </label>
-
-        <input type="text" id="school" name="school" placeholder="School" class="form-control" value="<%= @candidate.school %>">
+        <input type="text" id="usmle_2" name="usmle_2" placeholder="Usmle 2" class="form-control" value="<%= @candidate.usmle_2 %>">
       </div>
 
       <!-- Label and input for photo -->
