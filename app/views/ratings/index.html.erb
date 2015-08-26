@@ -21,16 +21,13 @@
 
       <% @ratings.each do |rating| %>
       <tr>
+        <td><img src="<%= rating.candidate.photo %>" width="50"</td>
         <td><%= rating.candidate.candidate_lastname %></td>
         <td><%= rating.q1 %></td>
         <td><%= rating.q2 %></td>
         <td><%= rating.q3 %></td>
         <td><%= rating.q4 %></td>
         <td><%= rating.overall_comment %></td>
-
-
-
-
 
         <td><%= rating.user_id %></td>
         <td>
