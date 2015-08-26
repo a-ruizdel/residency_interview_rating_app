@@ -6,5 +6,5 @@ class Candidate < ActiveRecord::Base
   mount_uploader :photo, PhotoUploader
 
   has_many :ratings
-  #has_many :users, through
+  has_many :users, :through => :ratings
 end
