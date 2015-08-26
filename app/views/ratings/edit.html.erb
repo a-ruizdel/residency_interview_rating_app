@@ -24,7 +24,8 @@
           Candidate's Name
         </label>
 
-        <input type="text" id="candidate_id" name="candidate_id" placeholder="Candidate" class="form-control" value="<%= @rating.candidate_id %>">
+        <!-- <input type="text" id="candidate_id" name="candidate_id" placeholder="Candidate" class="form-control" value="<%#= @rating.candidate_id %>"> -->
+        <%= select_tag(:candidate_id, options_from_collection_for_select(Candidate.all, :id, :candidate_lastname, @rating.candidate_id), :class => "form-control") %>
       </div>
 
 
