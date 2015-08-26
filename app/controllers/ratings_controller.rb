@@ -1,11 +1,15 @@
 class RatingsController < ApplicationController
   def index
     @ratings = Rating.all
+
+
   end
 
   def show
     @rating = Rating.find(params[:id])
     @candidate = Candidate.new
+    @total = @rating.q4 + @rating.q3 + @rating.q2 + @rating.q1
+    @average = @total/4
   end
 
   def new
