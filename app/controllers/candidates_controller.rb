@@ -1,6 +1,8 @@
 class CandidatesController < ApplicationController
   def index
-    @candidates = Candidate.all
+    #@candidates = Candidate.all
+    @q = Candidate.ransack(params[:q])
+    @candidates = @q.result
   end
 
   def show
