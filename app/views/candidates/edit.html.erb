@@ -18,14 +18,6 @@
       <!-- Hidden input for authenticity token to protect from forgery -->
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
-      <!-- Label and input for aoa -->
-      <div class="checkbox">
-        <label for="aoa">
-          <input type="checkbox" id="aoa" name="aoa" value="1" <%= "checked" if @candidate.aoa %>>
-          Aoa
-        </label>
-      </div>
-
       <!-- Label and input for candidate_lastname -->
       <div class="form-group">
         <label for="candidate_lastname" class="control-label">
@@ -71,25 +63,6 @@
         <input type="text" id="school" name="school" placeholder="School" class="form-control" value="<%= @candidate.school %>">
       </div>
 
-
-      <!-- Label and input for candidate_id -->
-      <!-- <div class="form-group">
-        <label for="candidate_id" class="control-label">
-          Candidate
-        </label>
-
-        <input type="text" id="candidate_id" name="candidate_id" placeholder="Candidate" class="form-control" value="<%#= @candidate.candidate_id %>">
-      </div>
-
-      Label and input for candidate_firstname
-      <div class="form-group">
-        <label for="candidate_firstname" class="control-label">
-          Candidate firstname
-        </label>
-
-        <input type="text" id="candidate_firstname" name="candidate_firstname" placeholder="Candidate firstname" class="form-control" value="<%#= @candidate.candidate_firstname %>">
-      </div> -->
-
       <!-- Label and input for add_degree -->
       <div class="form-group">
         <label for="add_degree" class="control-label">
@@ -99,10 +72,20 @@
         <input type="text" id="add_degree" name="add_degree" placeholder="Add degree" class="form-control" value="<%= @candidate.add_degree %>">
       </div>
 
+
+      <!-- Label and input for aoa -->
+      <div class="checkbox">
+        <label for="aoa">
+          <input type="checkbox" id="aoa" name="aoa" value="1" <%= "checked" if @candidate.aoa %>>
+          AOA
+        </label>
+      </div>
+
+
       <!-- Label and input for usmle_1 -->
       <div class="form-group">
         <label for="usmle_1" class="control-label">
-          Usmle 1
+          USMLE 1
         </label>
 
         <input type="text" id="usmle_1" name="usmle_1" placeholder="Usmle 1" class="form-control" value="<%= @candidate.usmle_1 %>">
@@ -112,7 +95,7 @@
       <!-- Label and input for usmle_2 -->
       <div class="form-group">
         <label for="usmle_2" class="control-label">
-          Usmle 2
+          USMLE 2
         </label>
 
         <input type="text" id="usmle_2" name="usmle_2" placeholder="Usmle 2" class="form-control" value="<%= @candidate.usmle_2 %>">
@@ -123,7 +106,7 @@
         <label for="photo" class="control-label">
           Photo
         </label>
-        Photo <%= @candidate[:photo] %>
+        <p>Current file: <%= @candidate[:photo] %></p>
         <input type="file" id="photo" name="photo" class="form-control">
 
       </div>
