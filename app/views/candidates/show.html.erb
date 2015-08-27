@@ -21,7 +21,8 @@
       <dd><%= @candidate.block %></dd>
 
       <dt>Interview on</dt>
-      <dd><%= @candidate.interview_on %></dd>
+      <dd><%= @candidate.interview_on.strftime('%B %e, %Y') %></dd>
+
 
       <dt>Add degree</dt>
       <dd><%= @candidate.add_degree %></dd>
@@ -32,7 +33,7 @@
       <dt>Usmle 2</dt>
       <dd><%= @candidate.usmle_2 %></dd>
 
-      <dt>Aoa</dt>
+      <dt>AOA</dt>
       <dd><%= human_boolean(@candidate.aoa) %></dd>
 </dl>
 </div>

@@ -62,9 +62,9 @@
         <th>Hometown</th>
         <th>School</th>
         <th>Additional degree</th>
-        <th>Usmle 1</th>
-        <th>Usmle 2</th>
-        <th>Aoa</th>
+        <th>USMLE 1</th>
+        <th>USMLE 2</th>
+        <th>AOA</th>
         <th>Actions</th>
       </tr>
 
@@ -74,7 +74,7 @@
         <td><img src="<%= candidate.photo %>" width="50"</td>
         <td><%= candidate.candidate_lastname %></td>
         <td><%= candidate.block %></td>
-        <td><%= candidate.interview_on %></td>
+        <td><%= candidate.interview_on.strftime('%B %e, %Y') %></td>
         <td><%= candidate.hometown %></td>
         <td><%= candidate.school %></td>
         <td><%= candidate.add_degree %></td>
