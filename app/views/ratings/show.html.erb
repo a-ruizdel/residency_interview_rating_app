@@ -21,7 +21,7 @@
 
       <p>Usmle 2: <%= @rating.candidate.usmle_2 %></p>
 
-      <p>Aoa: <%= @rating.candidate.aoa %></p>
+      <p>Aoa: <%= human_boolean(@rating.candidate.aoa) %></p>
     </div>
 
     <div class="col-xs-2">
