@@ -10,6 +10,7 @@
 
 <div class="page-header">
   <h3>Add Rating</h3>
+    <p>For questions 1 through 4 please use a 1 to 5 rating system with 1 being the lowest rating and 5 being the highest rating.</p>
 </div>
 
 <div class="row">
@@ -59,7 +60,8 @@
       <!-- Label and input for q4 -->
       <div class="form-group">
         <label for="q4" class="control-label">
-          Suppose one of your fellow medical students is causing friction amongst the group on a clerkship (bad-mouthing others, complaining about duties, comparing hours spent on various tasks).  How would you address this situation? (PBI-1)
+          Performance Based Interview Question:
+          <p>Suppose one of your fellow medical students is causing friction amongst the group on a clerkship (bad-mouthing others, complaining about duties, comparing hours spent on various tasks).  How would you address this situation? (1 to 5)</p>
         </label>
 
         <input type="text" id="q4" name="q4" placeholder="Q4" class="form-control" value="<%= @rating.q4 %>">
