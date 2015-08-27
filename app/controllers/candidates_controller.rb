@@ -19,7 +19,7 @@ class CandidatesController < ApplicationController
     @candidate.aoa = params[:aoa]
     @candidate.candidate_lastname = params[:candidate_lastname]
     @candidate.block = params[:block]
-    @candidate.interview_on = params[:interview_on]
+    @candidate.interview_on = Chronic.parse(params[:interview_on])
     @candidate.candidate_id = params[:candidate_id]
     @candidate.candidate_firstname = params[:candidate_firstname]
     @candidate.add_degree = params[:add_degree]
@@ -46,7 +46,7 @@ class CandidatesController < ApplicationController
     @candidate.aoa = params[:aoa]
     @candidate.candidate_lastname = params[:candidate_lastname]
     @candidate.block = params[:block]
-    @candidate.interview_on = params[:interview_on]
+    @candidate.interview_on = Chronic.parse(params[:interview_on])
     @candidate.candidate_id = params[:candidate_id]
     @candidate.candidate_firstname = params[:candidate_firstname]
     @candidate.add_degree = params[:add_degree]

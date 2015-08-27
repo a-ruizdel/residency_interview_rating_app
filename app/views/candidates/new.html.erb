@@ -59,34 +59,34 @@
       <!-- Label and input for usmle_1 -->
       <div class="form-group">
         <label for="usmle_1" class="control-label">
-          Usmle 1
+          USMLE 1
         </label>
 
-        <input type="text" id="usmle_1" name="usmle_1" placeholder="Usmle 1" class="form-control" value="<%= @candidate.usmle_1 %>">
+        <input type="text" id="usmle_1" name="usmle_1" placeholder="USMLE 1" class="form-control" value="<%= @candidate.usmle_1 %>">
       </div>
 
 
       <!-- Label and input for usmle_2 -->
       <div class="form-group">
         <label for="usmle_2" class="control-label">
-          Usmle 2
+          USMLE 2
         </label>
 
-        <input type="text" id="usmle_2" name="usmle_2" placeholder="Usmle 2" class="form-control" value="<%= @candidate.usmle_2 %>">
+        <input type="text" id="usmle_2" name="usmle_2" placeholder="USMLE 2" class="form-control" value="<%= @candidate.usmle_2 %>">
       </div>
 
       <!-- Label and input for aoa -->
       <div class="checkbox">
         <label for="aoa">
           <input type="checkbox" id="aoa" name="aoa" value="1" <%= "checked" if @candidate.aoa %>>
-          Aoa
+          AOA
         </label>
       </div>
 
       <!-- Label and input for block -->
       <div class="form-group">
         <label for="block" class="control-label">
-          AM or PM Block
+          Block (enter AM or PM in CAPITAL LETTERS)
         </label>
 
         <input type="text" id="block" name="block" placeholder="Block" class="form-control" value="<%= @candidate.block %>">

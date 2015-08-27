@@ -35,8 +35,9 @@
   <p class="lead">Narrow results:</p>
 
   <div class="form-group">
-    <%= f.label :block_eq, "AM or PM block?" %>
+    <%= f.label :block_eq, "AM or PM block? (CAPITAL LETTERS)" %>
     <%= f.text_field :block_eq, :class => "form-control", :placeholder => "Enter AM or PM in CAPITAL LETTERS" %>
+     <p><%#= f.collection_select(:block_eq, Candidate.all, :id, :block) %></p>
   </div>
 
    <div class="form-group">
@@ -70,7 +71,6 @@
 
       <% @candidates.each do |candidate| %>
       <tr>
-
         <td><img src="<%= candidate.photo %>" width="50"</td>
         <td><%= candidate.candidate_lastname %></td>
         <td><%= candidate.block %></td>
