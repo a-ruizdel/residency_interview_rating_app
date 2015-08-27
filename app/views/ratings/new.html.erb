@@ -76,11 +76,8 @@
 
       <!-- Label and input for user_id -->
       <div class="form-group">
-        <label for="user_id" class="control-label">
-          User's e-mail
-        </label>
-        <%= select_tag(:user_id, options_from_collection_for_select(User.all, :id, :email, @rating.user_id), :class => "form-control")%>
-        <!-- <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%#= @rating.current_user %>"> -->
+        <%#= select_tag(:user_id, options_from_collection_for_select(User.all, :id, :email, @rating.user_id), :class => "form-control")%>
+        <input name="user_id" type="hidden" value="<%= current_user.id %>">
       </div>
 
       <button class="btn btn-success">
