@@ -21,7 +21,7 @@
         <th>Actions</th>
       </tr>
 
-      <% @ratings.each do |rating| %>
+      <% @ratings_current.each do |rating| %>
       <% @total_rating = rating.q1 + rating.q2 + rating.q3 + rating.q4 %>
       <% @average_rating = @total_rating/4 %>
       <tr>

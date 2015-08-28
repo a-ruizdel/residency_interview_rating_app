@@ -1,6 +1,10 @@
 class RatingsController < ApplicationController
   def index
-    @ratings = current_user.ratings
+    #@ratings = current_user.ratings
+    @g = Rating.ransack(params[:g])
+    @ratings = @g.result
+    @ratings_current = current_user.ratings
+
   end
 
   def show
