@@ -15,12 +15,15 @@
         <th>Q2</th>
         <th>Q3</th>
         <th>Q4</th>
-         <th>Overall comment</th>
-
+        <th>Overall comment</th>
+        <th>Total</th>
+        <th>Average</th>
         <th>Actions</th>
       </tr>
 
       <% @ratings.each do |rating| %>
+      <% @total_rating = rating.q1 + rating.q2 + rating.q3 + rating.q4 %>
+      <% @average_rating = @total_rating/4 %>
       <tr>
         <td><img src="<%= rating.candidate.photo %>" width="50"</td>
         <td><%= rating.candidate.candidate_lastname %></td>
@@ -29,6 +32,8 @@
         <td><%= rating.q3 %></td>
         <td><%= rating.q4 %></td>
         <td><%= rating.overall_comment %></td>
+        <td><%= @total_rating %></td>
+        <td><%= @average_rating %></td>
 
 
         <td>
